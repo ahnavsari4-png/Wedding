@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Sparkles, X, ChevronLeft, ChevronRight, Image as ImageIcon } from 'lucide-react';
 import { GALLERY_PHOTOS } from '../data/weddingData';
+import { TribalGeometricBorder } from './TribalDecorations';
 
 interface PhotoGalleryProps {
   isGujarati: boolean;
@@ -30,19 +31,21 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ isGujarati }) => {
   };
 
   return (
-    <section id="gallery" className="py-16 sm:py-24 bg-[#FAF5EE] relative">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+    <section id="gallery" className="py-16 sm:py-24 bg-[#F5EDE1] relative overflow-hidden">
+      <TribalGeometricBorder color="#8C2D19" className="h-3 mb-8 opacity-70" />
+
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
-          <div className="inline-flex items-center space-x-2 text-[#851214] font-serif-gu font-semibold text-xs sm:text-sm uppercase tracking-wider mb-2">
-            <span className="text-[#C41E3A]">❖</span>
+          <div className="inline-flex items-center space-x-2 text-[#8C2D19] font-serif-gu font-bold text-xs sm:text-sm uppercase tracking-wider mb-2">
+            <span className="text-[#D97706]">✦</span>
             <span>{isGujarati ? 'સ્મૃતિ મંજૂષા' : 'Photo Gallery'}</span>
-            <span className="text-[#C41E3A]">❖</span>
+            <span className="text-[#D97706]">✦</span>
           </div>
-          <h2 className="font-serif-gu text-2xl sm:text-4xl font-bold text-[#851214]">
+          <h2 className="font-serif-gu text-2xl sm:text-4xl font-bold text-[#8C2D19]">
             {isGujarati ? 'પ્રેમ અને સ્નેહની અમૂલ્ય ક્ષણો' : 'Cherished Memories & Moments'}
           </h2>
-          <p className="mt-3 text-xs sm:text-sm text-[#6B4B3E] font-serif-gu">
+          <p className="mt-3 text-xs sm:text-sm text-[#701D0E] font-serif-gu">
             {isGujarati
               ? 'પ્રી-વેડિંગ શૂટ, ગોળધાણા-સગાઈ મહોત્સવ અને પરંપરાગત શણગારની યાદગાર તસવીરો.'
               : 'Glimpses from pre-wedding shoots, engagement ceremonies, and traditional preparations.'}
@@ -55,8 +58,8 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ isGujarati }) => {
             onClick={() => setActiveCategory('all')}
             className={`px-4 py-1.5 rounded-full text-xs font-semibold font-serif-gu transition-all ${
               activeCategory === 'all'
-                ? 'bg-[#851214] text-[#FDE68A] shadow'
-                : 'bg-white text-[#4A2810] hover:bg-[#FEE2E2] border border-[#E8DFC8]'
+                ? 'bg-[#8C2D19] text-[#FDE68A] shadow border border-[#D97706]'
+                : 'bg-[#FAF4EB] text-[#4A2810] hover:bg-[#F3E9D2] border border-[#8C2D19]/30'
             }`}
           >
             {isGujarati ? 'તમામ તસવીરો' : 'All Photos'}
@@ -65,8 +68,8 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ isGujarati }) => {
             onClick={() => setActiveCategory('prewedding')}
             className={`px-4 py-1.5 rounded-full text-xs font-semibold font-serif-gu transition-all ${
               activeCategory === 'prewedding'
-                ? 'bg-[#851214] text-[#FDE68A] shadow'
-                : 'bg-white text-[#4A2810] hover:bg-[#FEE2E2] border border-[#E8DFC8]'
+                ? 'bg-[#8C2D19] text-[#FDE68A] shadow border border-[#D97706]'
+                : 'bg-[#FAF4EB] text-[#4A2810] hover:bg-[#F3E9D2] border border-[#8C2D19]/30'
             }`}
           >
             {isGujarati ? 'પ્રી-વેડિંગ ક્ષણો' : 'Pre-Wedding'}
@@ -75,8 +78,8 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ isGujarati }) => {
             onClick={() => setActiveCategory('engagement')}
             className={`px-4 py-1.5 rounded-full text-xs font-semibold font-serif-gu transition-all ${
               activeCategory === 'engagement'
-                ? 'bg-[#851214] text-[#FDE68A] shadow'
-                : 'bg-white text-[#4A2810] hover:bg-[#FEE2E2] border border-[#E8DFC8]'
+                ? 'bg-[#8C2D19] text-[#FDE68A] shadow border border-[#D97706]'
+                : 'bg-[#FAF4EB] text-[#4A2810] hover:bg-[#F3E9D2] border border-[#8C2D19]/30'
             }`}
           >
             {isGujarati ? 'સગાઈ મહોત્સવ' : 'Engagement'}
@@ -85,8 +88,8 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ isGujarati }) => {
             onClick={() => setActiveCategory('rituals')}
             className={`px-4 py-1.5 rounded-full text-xs font-semibold font-serif-gu transition-all ${
               activeCategory === 'rituals'
-                ? 'bg-[#851214] text-[#FDE68A] shadow'
-                : 'bg-white text-[#4A2810] hover:bg-[#FEE2E2] border border-[#E8DFC8]'
+                ? 'bg-[#8C2D19] text-[#FDE68A] shadow border border-[#D97706]'
+                : 'bg-[#FAF4EB] text-[#4A2810] hover:bg-[#F3E9D2] border border-[#8C2D19]/30'
             }`}
           >
             {isGujarati ? 'શુકન & શણગાર' : 'Rituals & Decor'}
@@ -99,7 +102,7 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ isGujarati }) => {
             <div
               key={photo.id}
               onClick={() => setSelectedPhotoIndex(index)}
-              className="group cursor-pointer rounded-2xl overflow-hidden bg-white border border-[#E8DFC8] shadow-md hover:shadow-xl transition-all duration-300 relative flex flex-col"
+              className="group cursor-pointer rounded-2xl overflow-hidden bg-white border border-[#8C2D19]/25 shadow-md hover:shadow-xl transition-all duration-300 relative flex flex-col hover:border-[#D97706]"
             >
               <div className="relative aspect-[4/3] overflow-hidden bg-gray-100">
                 <img
@@ -117,11 +120,11 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ isGujarati }) => {
                 </div>
               </div>
 
-              <div className="p-4 bg-white flex-1 flex flex-col justify-between">
-                <h3 className="font-serif-gu font-bold text-sm text-[#851214]">
+              <div className="p-4 bg-[#FFFDF9] flex-1 flex flex-col justify-between">
+                <h3 className="font-serif-gu font-bold text-sm text-[#8C2D19]">
                   {isGujarati ? photo.titleGu : photo.titleEn}
                 </h3>
-                <p className="text-[11px] text-[#6B7280] font-serif-gu mt-1">
+                <p className="text-[11px] text-[#701D0E]/80 font-serif-gu mt-1">
                   {photo.captionGu}
                 </p>
               </div>
@@ -136,12 +139,12 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ isGujarati }) => {
             onClick={() => setSelectedPhotoIndex(null)}
           >
             <div
-              className="relative max-w-4xl w-full bg-[#1A1A1A] rounded-2xl overflow-hidden shadow-2xl border border-white/20"
+              className="relative max-w-4xl w-full bg-[#1A1A1A] rounded-2xl overflow-hidden shadow-2xl border border-[#D97706]/40"
               onClick={(e) => e.stopPropagation()}
             >
               <button
                 onClick={() => setSelectedPhotoIndex(null)}
-                className="absolute top-3 right-3 z-10 w-9 h-9 rounded-full bg-black/60 text-white hover:bg-black flex items-center justify-center transition-colors"
+                className="absolute top-3 right-3 z-10 w-9 h-9 rounded-full bg-black/60 text-white hover:bg-black flex items-center justify-center transition-colors border border-white/20"
                 title="બંધ કરો"
               >
                 <X className="w-5 h-5" />
@@ -149,7 +152,7 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ isGujarati }) => {
 
               <button
                 onClick={handlePrevPhoto}
-                className="absolute left-3 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-black/60 text-white hover:bg-black flex items-center justify-center transition-colors"
+                className="absolute left-3 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-black/60 text-white hover:bg-black flex items-center justify-center transition-colors border border-white/20"
                 title="પાછળ"
               >
                 <ChevronLeft className="w-6 h-6" />
@@ -157,7 +160,7 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ isGujarati }) => {
 
               <button
                 onClick={handleNextPhoto}
-                className="absolute right-3 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-black/60 text-white hover:bg-black flex items-center justify-center transition-colors"
+                className="absolute right-3 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-black/60 text-white hover:bg-black flex items-center justify-center transition-colors border border-white/20"
                 title="આગળ"
               >
                 <ChevronRight className="w-6 h-6" />
@@ -172,16 +175,16 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ isGujarati }) => {
                 />
               </div>
 
-              <div className="p-4 bg-[#851214] text-[#FDE68A] border-t border-[#D4AF37]/40 flex items-center justify-between">
+              <div className="p-4 bg-gradient-to-r from-[#701D0E] to-[#8C2D19] text-[#FDE68A] border-t border-[#D97706]/40 flex items-center justify-between">
                 <div>
                   <h3 className="font-serif-gu font-bold text-base">
                     {isGujarati ? filteredPhotos[selectedPhotoIndex].titleGu : filteredPhotos[selectedPhotoIndex].titleEn}
                   </h3>
-                  <p className="text-xs text-white/80 font-serif-gu mt-0.5">
+                  <p className="text-xs text-white/90 font-serif-gu mt-0.5">
                     {filteredPhotos[selectedPhotoIndex].captionGu}
                   </p>
                 </div>
-                <div className="text-xs text-white/70">
+                <div className="text-xs text-[#FDE68A]/80 font-medium">
                   {selectedPhotoIndex + 1} / {filteredPhotos.length}
                 </div>
               </div>

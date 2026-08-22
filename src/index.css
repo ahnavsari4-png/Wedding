@@ -20,15 +20,51 @@
   }
 }
 
-/* Custom wedding themes and patterns */
+/* Custom wedding themes, tribal Warli textures and patterns */
 .kanku-pattern {
-  background-color: #851214;
-  background-image: radial-gradient(rgba(212, 175, 55, 0.15) 1px, transparent 0);
+  background-color: #7A2111;
+  background-image: radial-gradient(rgba(217, 119, 6, 0.22) 1px, transparent 0);
   background-size: 24px 24px;
 }
 
+/* Tribal Terracotta Mud-wall & Warli backdrop pattern */
+.tribal-terracotta-bg {
+  background-color: #8C2D19;
+  background-image: 
+    radial-gradient(rgba(255, 248, 238, 0.08) 1.5px, transparent 1.5px),
+    radial-gradient(rgba(217, 119, 6, 0.12) 1px, transparent 1px);
+  background-size: 32px 32px, 16px 16px;
+  background-position: 0 0, 8px 8px;
+}
+
+/* Ivory Rice-Flour Paper Canvas texture */
+.tribal-canvas-bg {
+  background-color: #FDF9F2;
+  background-image: 
+    radial-gradient(#8C2D19 0.6px, transparent 0.6px),
+    radial-gradient(#D97706 0.6px, #FDF9F2 0.6px);
+  background-size: 36px 36px;
+  background-position: 0 0, 18px 18px;
+}
+
+.tribal-clay-bg {
+  background-color: #FAF4EB;
+  background-image: 
+    linear-gradient(45deg, rgba(140, 45, 25, 0.03) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(140, 45, 25, 0.03) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(140, 45, 25, 0.03) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(140, 45, 25, 0.03) 75%);
+  background-size: 20px 20px;
+}
+
 .gold-gradient-text {
-  background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #AA771C 100%);
+  background: linear-gradient(135deg, #B8860B 0%, #D97706 50%, #8C2D19 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tribal-gradient-text {
+  background: linear-gradient(135deg, #701D0E 0%, #B94625 50%, #D97706 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -37,27 +73,27 @@
   border-image: linear-gradient(to bottom right, #e6ca65, #b38728, #fbf5b7, #aa771c) 1;
 }
 
-.gold-card-border {
+.tribal-card-border {
   position: relative;
 }
 
-.gold-card-border::before {
+.tribal-card-border::before {
   content: '';
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  padding: 1.5px;
-  background: linear-gradient(135deg, #dfba53 0%, #996e19 50%, #f6e69d 100%);
+  padding: 2px;
+  background: linear-gradient(135deg, #8C2D19 0%, #D97706 50%, #701D0E 100%);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   pointer-events: none;
 }
 
-/* Subtle Bandhani / Patola geometric texture */
+/* Subtle Bandhani / Patola / Tribal geometric texture */
 .bandhani-bg {
-  background-color: #FAF5EE;
-  background-image: radial-gradient(#C41E3A 0.75px, transparent 0.75px), radial-gradient(#D4AF37 0.75px, #FAF5EE 0.75px);
+  background-color: #FAF4EB;
+  background-image: radial-gradient(#8C2D19 0.75px, transparent 0.75px), radial-gradient(#D97706 0.75px, #FAF4EB 0.75px);
   background-size: 30px 30px;
   background-position: 0 0, 15px 15px;
 }
