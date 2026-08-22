@@ -1,0 +1,6 @@
+{
+  "name": "Gujarati Wedding Website - શુભ વિવાહ",
+  "description": "સુંદર પરંપરાગત ગુજરાતી લગ્ન વેબસાઇટ અને ડિજિટલ કંકોત્રી - મુહૂર્ત કાઉન્ટડાઉન, રસમ/વિધિ પત્રિકા, મંગળ સૂર, ડિજિટલ આશીર્વાદ અને RSVP.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
