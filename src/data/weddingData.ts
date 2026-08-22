@@ -18,9 +18,9 @@ export const WEDDING_DETAILS = {
     image: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&q=80',
   },
   bride: {
-    nameGu: 'ચિ. ડો. ટ્વિન્કલ',
+    nameGu: 'ચિ. ડો. ટવિન્ક્લ',
     nameEn: 'Ch. Dr. Twinkle',
-    fullNameGu: 'ડો. ટ્વિન્કલ મહેશભાઈ પટેલ',
+    fullNameGu: 'ડો. ટવિન્ક્લ  મહેશભાઈ પટેલ',
     fullNameEn: 'Dr. Twinkle Maheshbhai Patel',
     educationGu: 'M.D. (Paediatrics)',
     professionGu: 'બાળરોગ નિષ્ણાત (પીડિયાટ્રિશિયન)',
